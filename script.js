@@ -5,7 +5,16 @@ function append(value) {
 function clearDisplay() {
     document.getElementById("display").value = "";
 }
-
+document.addEventListener("keydown", function(e) {
+    const key = e.key;
+    if (!isNaN(key) || "+-*/.".includes(key)) {
+        append(key);
+    } else if (key === "Enter") {
+        calculate();
+    } else if (key === "Backspace") {
+        clearDisplay();
+    }
+});
 function calculate() {
     try {
         document.getElementById("display").value =

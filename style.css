@@ -6,12 +6,19 @@ body {
     height: 100vh;
     font-family: Arial;
 }
-
 .calculator {
     background: #1e293b;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    width: 300px; /* 🔥 limite la largeur */
+    margin: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 🔥 auto responsive */
+    gap: 10px;
 }
 
 #display {

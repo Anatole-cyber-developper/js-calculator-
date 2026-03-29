@@ -15,3 +15,4 @@ function calculate() {
         display.value = "Erreur";
     }
 }
+alert("OK");

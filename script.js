@@ -21,8 +21,6 @@ function calculate() {
         let result = Function("return " + document.getElementById("display").value)();
         let display = document.getElementById("display");
         display.value = result;
-
-        display.style.color = "#22c55e"; // 🔥 vert = résultat visible
     } catch {
         alert("Erreur");
     }

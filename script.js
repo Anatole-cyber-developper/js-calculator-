@@ -14,3 +14,4 @@ function calculate() {
         alert("Erreur");
     }
 }
+alert("JS OK");

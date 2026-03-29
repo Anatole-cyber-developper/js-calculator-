@@ -8,11 +8,10 @@ body {
 }
 
 .calculator {
-    background: rgba(30, 41, 59, 0.8);
+    background: #1e293b;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
 }
 
 #display {
@@ -40,24 +39,15 @@ button {
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    background: #1e293b;
+    background: #334155;
     color: white;
-    transition: 0.2s;
 }
 
 button:hover {
     background: #38bdf8;
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.95);
 }
 
 .equal {
     background: #22c55e;
-}
-
-.equal:hover {
-    background: #4ade80;
+    color: black;
 }

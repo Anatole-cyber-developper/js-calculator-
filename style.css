@@ -61,3 +61,6 @@ button:active {
 .zero {
     grid-column: span 2;
 }
+button:active {
+    transform: scale(0.9);
+}

@@ -18,9 +18,12 @@ document.addEventListener("keydown", function(e) {
 });
 function calculate() {
     try {
-        document.getElementById("display").value =
-            eval(document.getElementById("display").value);
-    } catch {m
+        let result = Function("return " + document.getElementById("display").value)();
+        let display = document.getElementById("display");
+        display.value = result;
+
+        display.style.color = "#22c55e"; // 🔥 vert = résultat visible
+    } catch {
         alert("Erreur");
     }
 }

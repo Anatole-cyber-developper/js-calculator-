@@ -19,4 +19,12 @@ function calculate() {
         display.value = "Erreur";
     }
 }
+function append(value) {
+    let display = document.getElementById("display");
 
+    if ("+-*/".includes(value) && "+-*/".includes(display.value.slice(-1))) {
+        return;
+    }
+
+    display.value += value;
+}

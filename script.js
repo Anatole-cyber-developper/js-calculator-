@@ -14,12 +14,13 @@ document.addEventListener("keydown", function(e) {
     } else if (key === "Backspace") {
         clearDisplay();
     }
+    <input type="text" id="display">
 });
 function calculate() {
     try {
         document.getElementById("display").value =
             eval(document.getElementById("display").value);
-    } catch {
+    } catch {m
         alert("Erreur");
     }
 }
